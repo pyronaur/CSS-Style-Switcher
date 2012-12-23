@@ -35,5 +35,5 @@ setcookie('css_stylesheet', implode('+', $include));
 
 header('Content-type: text/css');
 if(isset($_GET['style']))
-	(isset($_SERVER['HTTP_REFERER'])) ?	header("Location:".$_SERVER['HTTP_REFERER']) : header("Location:http://".$_SERVER['SERVER_NAME']);
+	(isset($_SERVER['HTTP_REFERER'])) ? header("Location:".$_SERVER['HTTP_REFERER']) : header("Location:http://".$_SERVER['SERVER_NAME']);
 if(!empty($include)) { foreach($include as $value) include $value; } else { die(".css NOT FOUND"); }
