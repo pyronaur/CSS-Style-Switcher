@@ -1,7 +1,7 @@
 <?php
 
 function default_css(){
-	$default = check_file_exists(array('light.css'));
+	$default = check_file_exists(array('default_1.css', 'default_2.css'));
 	if(empty($default)){
 		$default = array_values(array_filter(scandir('.'), 'filter_css'));
 		return array($default[0]);
