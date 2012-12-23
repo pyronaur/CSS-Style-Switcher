@@ -42,7 +42,9 @@ if(isset($_COOKIE['css_stylesheet']) && !isset($_GET['style'])){
 }
 setcookie('css_stylesheet', implode('+', $include));
 
+# If last page visited can’t be found (HTTP_REFERER) will redirect back to index of the site.
 header('Content-type: text/css');
 if(isset($_GET['style']))
 	(isset($_SERVER['HTTP_REFERER'])) ? header("Location:".$_SERVER['HTTP_REFERER']) : header("Location:http://".$_SERVER['SERVER_NAME']);
+# Includes CSS files in the header
 if(!empty($include)) { foreach($include as $value) include $value; } else { die(".css NOT FOUND"); }
