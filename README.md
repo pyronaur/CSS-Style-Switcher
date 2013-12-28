@@ -1,12 +1,10 @@
-I'll start off saying, that you can read more about the script here: http://justnorris.com/css-switch-script/
+*I'll start off saying, that you can read more about the script here: http://justnorris.com/css-switch-script/*
 
-Overwiew: A Simple PHP Script to switch CSS Styles. Support for multiple CSS files at once. Has support for default CSS files, additional ones, etc. A pretty neat script and a lot more reliable solution then JavaScript. 
+##Overwiew: 
+A Simple PHP Script to switch CSS Styles. Support for multiple CSS files at once. Has support for default CSS files, additional ones, etc. A pretty neat script and a lot more reliable solution then JavaScript. 
 
-If I may, I'd like to ask just 2 things from you:
-  * Please don't sell the script. Link to it, it's free.
-  * Please, if you find use to the script, leave a link in the comments section (at my blog), I'd really like to see it in action :)
 
-Functionality:
+## Functionality:
 
   * No PHP Knowledge required at all, No installing, just drop the file in your CSS Folder, and make sure the server supports PHP.
   * Ideal to showcase your work in multiple stylesheets but one HTML File.
@@ -16,7 +14,7 @@ Functionality:
   * If not found scan the directory for CSS files and use the first one found (ordered alphabetically)
   * Use Links to change styles. So <a href=”css/switcher.php?style=another_1.css%2Banother_2.css%2Banother_3.css ...”>Another Style</a> is going to switch the style, set a cookie for 1 hour and then redirect back to last page. If last page visited can’t be found (HTTP_REFERER) PHP script will redirect back to index of the site.
 
-Setup:
+##Setup:
 
   * Download the script
   * Insert switcher.php to your CSS Folder (In best scenario, you have a seperate folder with CSS files, if not, it’s okay, the script filters CSS files when listing them)
