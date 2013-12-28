@@ -1,4 +1,4 @@
-I'll start off saying, that you can read more about the script here: http://www.themer.me/css-switch-script
+I'll start off saying, that you can read more about the script here: http://justnorris.com/css-switch-script/
 
 Overwiew: A Simple PHP Script to switch CSS Styles. Support for multiple CSS files at once. Has support for default CSS files, additional ones, etc. A pretty neat script and a lot more reliable solution then JavaScript. 
 
